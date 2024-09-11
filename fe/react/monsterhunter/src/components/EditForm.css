@@ -1,0 +1,100 @@
+form {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 330px 330px;
+  grid-template-rows: repeat(4, auto);
+  gap: 5px;
+}
+
+input,
+select {
+  background-color: #222222;
+  box-sizing: border-box;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.75em 1em;
+  width: 100%;
+}
+
+input:focus {
+  background-color: #4e4e4e;
+}
+
+button {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.125em;
+  font-weight: bold;
+  padding: 0.7rem 3rem;
+  border: none;
+  margin-left: 5px;
+}
+
+.save-button {
+  background: #06a77e;
+  width: 163px;
+  margin-left: 5px;
+}
+
+.delete-button {
+  background: #e8474c;
+  width: 162px;
+  margin-left: 0;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+  padding-top: 0;
+  padding-left: 0;
+  letter-spacing: 0.025em;
+  font-size: 1.125em;
+  line-height: 1.25;
+  position: relative;
+  z-index: 100;
+  font-family: "Titillium Web", sans-serif;
+  display: block;
+}
+
+.hidden-input {
+  /* display: none; */
+}
+
+.grid-1-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-1-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid-2-1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid-2-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.grid-3-1 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.grid-3-2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.grid-4-2 {
+  grid-column: 2 / 2;
+  grid-row: 4;
+  text-align: right;
+}

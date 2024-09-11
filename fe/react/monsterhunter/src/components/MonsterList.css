@@ -1,0 +1,86 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.filter-input {
+  width: 300px;
+  margin-right: 5px;
+}
+
+.clear-filter-button {
+  padding: 0 0.7rem;
+  background: #e8474c;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.monster-card {
+  cursor: pointer;
+  width: 15rem;
+  height: 10rem;
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.monster-card div {
+  font-family: "Titillium Web", sans-serif;
+  opacity: 0.7;
+  margin-bottom: 5px;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.card-bg-layer {
+  background-color: #222;
+  width: 6rem;
+  height: 9rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  transition: width 0.5s ease;
+}
+
+.monster-card:hover .card-bg-layer {
+  width: 14rem;
+  opacity: 0.95;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.monster-name {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  opacity: 1 !important;
+  text-wrap: nowrap;
+}
+
+.monster-owned-lang {
+  display: block;
+}
+.monster-owned {
+  margin-right: 5px;
+}
+
+.monster-size {
+  display: block;
+}
+.monster-date {
+  display: block;
+}
